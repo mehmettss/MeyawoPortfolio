@@ -1,0 +1,31 @@
+﻿@model MeyawoPortfolio.Models.TblProjects
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/_Layout1.cshtml";
+}
+
+
+<h2>Yeni Proje Girisi</h2>
+
+<form method="post">
+
+    <label>Proje Baslıgı</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "table table-bordered" })
+    <br />
+    <label>Proje Gorsel Linki</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "table table-bordered" })
+
+    <br />
+    <label>Github Linki</label>
+    @Html.TextBoxFor(x => x.ProjectUrl, new { @class = "table table-bordered" })
+
+    <br />
+    <label>Proje Kategorisi</label>
+    @Html.DropDownListFor(x=>x.ProjectCategory,(List<SelectListItem>)ViewBag.v, new { @class = "table table-bordered" })
+
+    <br />
+    <label>Acıklama</label>
+<textarea rows="5" class="table table-bordered" name="Description"></textarea>
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>

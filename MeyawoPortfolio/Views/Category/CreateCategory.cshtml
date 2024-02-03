@@ -1,0 +1,19 @@
+﻿@model MeyawoPortfolio.Models.TblCategory
+@{
+    ViewBag.Title = "CreateCategory";
+    Layout = "~/Views/AdminLayout/_Layout1.cshtml";
+}
+
+
+
+<h2>Yeni Proje Girisi</h2>
+
+<form method="post">
+
+    <label>Kategori Adı</label>
+    @Html.TextBoxFor(x => x.CategoryName, new { @class = "table table-bordered" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>
+
+

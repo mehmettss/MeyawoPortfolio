@@ -1,0 +1,32 @@
+﻿@model MeyawoPortfolio.Models.TblTestimonial
+
+@{
+    ViewBag.Title = "EditTestimonial";
+    Layout = "~/Views/AdminLayout/_Layout1.cshtml";
+}
+
+
+
+
+<h2> Referans Guncelleme Sayfası</h2>
+<form method="post">
+    <label>Testimonial ID</label>
+    <input type="text" class="table table-bordered" value="@Model.TestimonialID" name="TestimonialID" />
+    <br />
+    <label>İsim Soyisim</label>
+    <input type="text" class="table table-bordered" value="@Model.NameSurname" name="NameSurname" />
+    <br />
+    <label>Acıklama</label>
+    <input type="text" class="table table-bordered" value="@Model.Description" name="Description" />
+    <br />
+    <label>Durum</label>
+    <input type="text" class="table table-bordered" value="@Model.Status" name="Status" />
+    <br />
+    <button class="btn btn-info">Guncelle</button>
+</form>
+
+
+
+
+
+

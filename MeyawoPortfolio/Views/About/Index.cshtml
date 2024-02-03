@@ -1,0 +1,42 @@
+﻿@model List<MeyawoPortfolio.Models.TblAbout>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/_Layout1.cshtml";
+}
+
+
+<h2>Hakkımda Duzenleme Sayfası</h2>
+
+<table class="table table-bordered">
+    <tr>
+
+
+        <th>ID</th>
+        <th>Basılk</th>
+        <th>Baslık 2</th>
+        <th>Acıklama</th>
+        <th>Image URL</th>
+        
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.AboutID</td>
+            <td>@item.Title</td>
+            <td>@item.Header</td>
+            <td>@(item.Description.Length > 15 ? item.Description.Substring(0, 15) + "..." : item.Description)</td>
+            <td>@item.ImageUrl</td>
+            <td><a href="/About/EditAbout/@item.AboutID" class="btn btn-success">Guncelle</a></td>
+        </tr>
+    }
+</table>
+
+
+
+
+
+
+
+

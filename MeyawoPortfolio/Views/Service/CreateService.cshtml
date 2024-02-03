@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "CreateService";
+    Layout = "~/Views/AdminLayout/_Layout1.cshtml";
+}
+
+<h2>Yeni Hizmet Baslıgı</h2>
+<form method="post">
+    <label>Hizmet Baslıgı</label>
+    <input type="text" class="table table-bordered" name="Title"/>
+    <br />
+    <label>Hizmet Gorseli</label>
+    <input type="text" class="table table-bordered" name="ImageUrl" />
+    <br />
+    <label>Hizmet Acıklaması</label>
+    <textarea rows="4" class="table table-bordered" name="Description"></textarea>
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>

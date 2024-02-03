@@ -1,0 +1,31 @@
+﻿
+@model MeyawoPortfolio.Models.TblFeature
+
+
+@{
+    ViewBag.Title = "EditFeature";
+    Layout = "~/Views/AdminLayout/_Layout1.cshtml";
+}
+
+
+<h2> Kategori Guncelleme Sayfası</h2>
+<form method="post">
+    <label>Feature ID</label>
+    <input type="text" class="table table-bordered" value="@Model.FeatureID" name="FeatureID" />
+    <br />
+    <label>Baslık</label>
+    <input type="text" class="table table-bordered" value="@Model.Header" name="Header" />
+    <br />
+    <label>Ad Soyad</label>
+    <input type="text" class="table table-bordered" value="@Model.NameSurname" name="NameSurname" />
+    <br />
+    <label>Pozisyon</label>
+    <input type="text" class="table table-bordered" value="@Model.Title" name="Title" />
+    <br />
+    <button class="btn btn-info">Guncelle</button>
+</form>
+
+
+
+
+

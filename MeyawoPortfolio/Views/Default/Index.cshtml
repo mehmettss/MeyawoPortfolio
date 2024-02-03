@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Partial("/Views/Default/HeadPartial.cshtml")
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    @Html.Partial("/Views/Default/NavbarPartial.cshtml")
+    <!-- page header -->
+    @Html.Action("FeaturePartial")
+    <!-- about section -->
+    @Html.Action("AboutPartial")
+
+    <!-- service section -->
+    @Html.Action("ServicePartial")
+    <!-- portfolio section -->
+    @Html.Action("PortfolioPartial")
+    <!-- pricing section -->
+    <!-- section -->
+    @*@Html.Action("HireMePartial")*@
+    <!-- testimonial section -->
+    @Html.Action("TestimonialPartial")
+    <!-- blog section -->
+    <!-- contact section -->
+    @Html.Action("ContactPartial")
+    <!-- footer -->
+
+    @Html.Action("ScriptPartial")
+</body>
+
+</html>
